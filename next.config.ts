@@ -3,6 +3,7 @@ import type { NextConfig } from 'next';
 const basePath = process.env.GITHUB_ACTIONS === 'true' ? '/starfishos-docs' : '';
 
 const nextConfig: NextConfig = {
+  agentRules: false,
   output: 'export',
   trailingSlash: true,
   basePath,
